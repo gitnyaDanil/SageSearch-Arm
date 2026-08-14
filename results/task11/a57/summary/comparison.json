@@ -1,0 +1,133 @@
+{
+  "evidence_kind": "SageSearch Arm Task 11 benchmark matrix",
+  "case_count": 20,
+  "configurations": [
+    {
+      "configuration": "gpu-baseline-unconstrained",
+      "backend": "GPU",
+      "prompt": "baseline-v1",
+      "response_constraint": false,
+      "deterministic_reconciliation": false,
+      "failure_type": "LiteRtLmJniException (20/20)",
+      "error_count": 20,
+      "usable_output_count": 0,
+      "engine_initialization_ms": 11180,
+      "strict_json_rate": 0.0,
+      "schema_valid_rate": 0.0,
+      "exact_plan_rate": 0.0,
+      "plan_slot_f1": 0.0,
+      "latency_ms_median": null,
+      "latency_ms_p95": null,
+      "failure_return_latency_ms_median": 688.5,
+      "peak_pss_mb_median": 2082.50830078125,
+      "quality_pass": false
+    },
+    {
+      "configuration": "cpu-baseline-unconstrained",
+      "backend": "CPU",
+      "prompt": "baseline-v1",
+      "response_constraint": false,
+      "deterministic_reconciliation": false,
+      "failure_type": null,
+      "error_count": 0,
+      "usable_output_count": 20,
+      "engine_initialization_ms": 4994,
+      "strict_json_rate": 0.0,
+      "schema_valid_rate": 0.0,
+      "exact_plan_rate": 0.0,
+      "plan_slot_f1": 0.0,
+      "latency_ms_median": 8008.5,
+      "latency_ms_p95": 12809.699999999999,
+      "failure_return_latency_ms_median": null,
+      "peak_pss_mb_median": 2180.431640625,
+      "quality_pass": false
+    },
+    {
+      "configuration": "cpu-optimized-unconstrained",
+      "backend": "CPU",
+      "prompt": "optimized-v1",
+      "response_constraint": false,
+      "deterministic_reconciliation": false,
+      "failure_type": null,
+      "error_count": 0,
+      "usable_output_count": 20,
+      "engine_initialization_ms": 4953,
+      "strict_json_rate": 1.0,
+      "schema_valid_rate": 1.0,
+      "exact_plan_rate": 0.05,
+      "plan_slot_f1": 0.6356589147286822,
+      "latency_ms_median": 4617.0,
+      "latency_ms_p95": 8463.35,
+      "failure_return_latency_ms_median": null,
+      "peak_pss_mb_median": 2214.072265625,
+      "quality_pass": false
+    },
+    {
+      "configuration": "cpu-optimized-constrained-hybrid",
+      "backend": "CPU",
+      "prompt": "sagesearch-query-plan-v1-opt2",
+      "response_constraint": true,
+      "deterministic_reconciliation": true,
+      "failure_type": null,
+      "error_count": 0,
+      "usable_output_count": 20,
+      "engine_initialization_ms": 5042,
+      "strict_json_rate": 1.0,
+      "schema_valid_rate": 1.0,
+      "exact_plan_rate": 1.0,
+      "plan_slot_f1": 1.0,
+      "latency_ms_median": 8766.0,
+      "latency_ms_p95": 11820.300000000001,
+      "failure_return_latency_ms_median": null,
+      "peak_pss_mb_median": 2230.806640625,
+      "quality_pass": true
+    }
+  ],
+  "winning_configuration": "cpu-optimized-constrained-hybrid",
+  "median_latency_improvement_vs_gpu_percent": null,
+  "latency_target_pass": false,
+  "planner_quality_gate": {
+    "schema_valid_rate": 1.0,
+    "minimum_plan_slot_f1": 0.95
+  },
+  "preliminary_retrieval": {
+    "evidence_kind": "synthetic on-device preliminary retrieval",
+    "document_count": 10000,
+    "candidate_cap": 200,
+    "warm_up_runs": 3,
+    "recorded_runs": 25,
+    "latency_ms_p50": 8.970508,
+    "latency_ms_p95": 12.069242199999998,
+    "latency_ms_min": 5.01457,
+    "latency_ms_max": 15.50086,
+    "retrieval_case_count": 3,
+    "retrieval_top_1_rate": 1,
+    "retrieval_top_3_rate": 1,
+    "retrieval": [
+      {
+        "id": "gym-march",
+        "rank": 1,
+        "result_count": 1
+      },
+      {
+        "id": "sushi",
+        "rank": 1,
+        "result_count": 200
+      },
+      {
+        "id": "shoe-repair",
+        "rank": 1,
+        "result_count": 3
+      }
+    ],
+    "limitations": [
+      "Documents and queries are synthetic and exercise the bounded Room/FTS retrieval path.",
+      "The timing excludes OCR, model inference, and UI rendering."
+    ]
+  },
+  "limitations": [
+    "Planner cases, documents, and retrieval queries are synthetic smoke fixtures.",
+    "The synchronous LiteRT-LM API did not expose TTFT, prefill, decode, or energy metrics.",
+    "No NPU, SME2, i8mm, KleidiAI, battery-life, or energy-efficiency claim is made."
+  ]
+}

@@ -1,0 +1,326 @@
+{
+  "case_count": 20,
+  "output_count": 20,
+  "strict_json_rate": 1.0,
+  "recoverable_json_rate": 1.0,
+  "schema_valid_rate": 1.0,
+  "exact_plan_rate": 0.05,
+  "plan_slot_precision": 0.640625,
+  "plan_slot_recall": 0.6307692307692307,
+  "plan_slot_f1": 0.6356589147286822,
+  "missing_ids": [],
+  "unexpected_ids": [],
+  "performance": {
+    "latency_ms": {
+      "count": 20,
+      "median": 4617.0,
+      "p95": 8463.35,
+      "min": 3457.0,
+      "max": 9059.0
+    },
+    "peak_pss_mb": {
+      "count": 20,
+      "median": 2214.072265625,
+      "p95": 2228.3738281250003,
+      "min": 2191.4775390625,
+      "max": 2231.39453125
+    }
+  },
+  "details": [
+    {
+      "id": "q001",
+      "strict_json": true,
+      "recoverable_json": true,
+      "status": "ok",
+      "schema_valid": true,
+      "exact": false,
+      "errors": [],
+      "false_positive_tokens": [
+        "textTerms:alfamart",
+        "textTerms:july 2026",
+        "textTerms:receipts",
+        "textTerms:rp100,000"
+      ],
+      "false_negative_tokens": []
+    },
+    {
+      "id": "q002",
+      "strict_json": true,
+      "recoverable_json": true,
+      "status": "ok",
+      "schema_valid": true,
+      "exact": false,
+      "errors": [],
+      "false_positive_tokens": [
+        "textTerms:toko maju"
+      ],
+      "false_negative_tokens": [
+        "amountRangeMinor.max:27750"
+      ]
+    },
+    {
+      "id": "q003",
+      "strict_json": true,
+      "recoverable_json": true,
+      "status": "ok",
+      "schema_valid": true,
+      "exact": false,
+      "errors": [],
+      "false_positive_tokens": [
+        "textTerms:bandung",
+        "textTerms:welcome"
+      ],
+      "false_negative_tokens": [
+        "textTerms:welcome to bandung"
+      ]
+    },
+    {
+      "id": "q004",
+      "strict_json": true,
+      "recoverable_json": true,
+      "status": "ok",
+      "schema_valid": true,
+      "exact": false,
+      "errors": [],
+      "false_positive_tokens": [
+        "amountRangeMinor.max:50",
+        "amountRangeMinor.min:10"
+      ],
+      "false_negative_tokens": [
+        "amountRangeMinor.max:5000",
+        "amountRangeMinor.min:1000",
+        "contentKinds:receipt"
+      ]
+    },
+    {
+      "id": "q005",
+      "strict_json": true,
+      "recoverable_json": true,
+      "status": "ok",
+      "schema_valid": true,
+      "exact": true,
+      "errors": [],
+      "false_positive_tokens": [],
+      "false_negative_tokens": []
+    },
+    {
+      "id": "q006",
+      "strict_json": true,
+      "recoverable_json": true,
+      "status": "ok",
+      "schema_valid": true,
+      "exact": false,
+      "errors": [],
+      "false_positive_tokens": [
+        "labels:conference badge",
+        "mediaDateRange.end:2026-08-14T23:59:59Z",
+        "mediaDateRange.start:2026-08-14T00:00:00Z"
+      ],
+      "false_negative_tokens": [
+        "albumHint:camera",
+        "contentKinds:picture",
+        "textTerms:conference badge"
+      ]
+    },
+    {
+      "id": "q007",
+      "strict_json": true,
+      "recoverable_json": true,
+      "status": "ok",
+      "schema_valid": true,
+      "exact": false,
+      "errors": [],
+      "false_positive_tokens": [
+        "amountRangeMinor.min:0"
+      ],
+      "false_negative_tokens": [
+        "currencyCode:IDR"
+      ]
+    },
+    {
+      "id": "q008",
+      "strict_json": true,
+      "recoverable_json": true,
+      "status": "ok",
+      "schema_valid": true,
+      "exact": false,
+      "errors": [],
+      "false_positive_tokens": [],
+      "false_negative_tokens": [
+        "amountRangeMinor.max:125000"
+      ]
+    },
+    {
+      "id": "q009",
+      "strict_json": true,
+      "recoverable_json": true,
+      "status": "ok",
+      "schema_valid": true,
+      "exact": false,
+      "errors": [],
+      "false_positive_tokens": [],
+      "false_negative_tokens": [
+        "contentKinds:picture"
+      ]
+    },
+    {
+      "id": "q010",
+      "strict_json": true,
+      "recoverable_json": true,
+      "status": "ok",
+      "schema_valid": true,
+      "exact": false,
+      "errors": [],
+      "false_positive_tokens": [],
+      "false_negative_tokens": [
+        "contentKinds:picture"
+      ]
+    },
+    {
+      "id": "q011",
+      "strict_json": true,
+      "recoverable_json": true,
+      "status": "ok",
+      "schema_valid": true,
+      "exact": false,
+      "errors": [],
+      "false_positive_tokens": [
+        "faceFilter:none"
+      ],
+      "false_negative_tokens": [
+        "labels:screenshot",
+        "textTerms:0x80070005"
+      ]
+    },
+    {
+      "id": "q012",
+      "strict_json": true,
+      "recoverable_json": true,
+      "status": "ok",
+      "schema_valid": true,
+      "exact": false,
+      "errors": [],
+      "false_positive_tokens": [
+        "textTerms:toko maju"
+      ],
+      "false_negative_tokens": [
+        "currencyCode:IDR"
+      ]
+    },
+    {
+      "id": "q013",
+      "strict_json": true,
+      "recoverable_json": true,
+      "status": "ok",
+      "schema_valid": true,
+      "exact": false,
+      "errors": [],
+      "false_positive_tokens": [],
+      "false_negative_tokens": [
+        "labels:bicycle"
+      ]
+    },
+    {
+      "id": "q014",
+      "strict_json": true,
+      "recoverable_json": true,
+      "status": "ok",
+      "schema_valid": true,
+      "exact": false,
+      "errors": [],
+      "false_positive_tokens": [
+        "textTerms:100 ribu",
+        "textTerms:alfamart",
+        "textTerms:juli 2026",
+        "textTerms:struk"
+      ],
+      "false_negative_tokens": []
+    },
+    {
+      "id": "q015",
+      "strict_json": true,
+      "recoverable_json": true,
+      "status": "ok",
+      "schema_valid": true,
+      "exact": false,
+      "errors": [],
+      "false_positive_tokens": [
+        "labels:album"
+      ],
+      "false_negative_tokens": [
+        "albumHint:whatsapp images",
+        "contentKinds:picture"
+      ]
+    },
+    {
+      "id": "q016",
+      "strict_json": true,
+      "recoverable_json": true,
+      "status": "ok",
+      "schema_valid": true,
+      "exact": false,
+      "errors": [],
+      "false_positive_tokens": [],
+      "false_negative_tokens": [
+        "contentKinds:receipt"
+      ]
+    },
+    {
+      "id": "q017",
+      "strict_json": true,
+      "recoverable_json": true,
+      "status": "ok",
+      "schema_valid": true,
+      "exact": false,
+      "errors": [],
+      "false_positive_tokens": [
+        "contentKinds:picture"
+      ],
+      "false_negative_tokens": []
+    },
+    {
+      "id": "q018",
+      "strict_json": true,
+      "recoverable_json": true,
+      "status": "ok",
+      "schema_valid": true,
+      "exact": false,
+      "errors": [],
+      "false_positive_tokens": [],
+      "false_negative_tokens": [
+        "contentKinds:receipt"
+      ]
+    },
+    {
+      "id": "q019",
+      "strict_json": true,
+      "recoverable_json": true,
+      "status": "ok",
+      "schema_valid": true,
+      "exact": false,
+      "errors": [],
+      "false_positive_tokens": [
+        "mediaDateRange.end:2026-08-07",
+        "mediaDateRange.start:2026-08-01"
+      ],
+      "false_negative_tokens": [
+        "contentKinds:picture",
+        "mediaDateRange.end:2026-08-07T23:59:59Z",
+        "mediaDateRange.start:2026-08-01T00:00:00Z"
+      ]
+    },
+    {
+      "id": "q020",
+      "strict_json": true,
+      "recoverable_json": true,
+      "status": "ok",
+      "schema_valid": true,
+      "exact": false,
+      "errors": [],
+      "false_positive_tokens": [],
+      "false_negative_tokens": [
+        "contentKinds:picture"
+      ]
+    }
+  ]
+}

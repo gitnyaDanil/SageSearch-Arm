@@ -1,0 +1,55 @@
+{
+  "configuration": "cpu-optimized-constrained-hybrid",
+  "backend": "CPU",
+  "prompt": "sagesearch-query-plan-v1-opt2",
+  "response_constraint": true,
+  "deterministic_reconciliation": true,
+  "reference_date": "2026-08-14",
+  "case_count": 20,
+  "accepted_count": 20,
+  "started_at_millis": 1786714343119,
+  "completed_at_millis": 1786714533067,
+  "engine_initialization_ms": 5042,
+  "model_size_bytes": 2588147712,
+  "model_sha256": "181938105e0eefd105961417e8da75903eacda102c4fce9ce90f50b97139a63c",
+  "runtime": "LiteRT-LM 0.16.0",
+  "generation": {
+    "temperature": 0,
+    "top_k": 1,
+    "top_p": 1,
+    "seed": 0,
+    "max_output_tokens": 192
+  },
+  "device_start": {
+    "manufacturer": "samsung",
+    "model": "SM-A576B",
+    "android_release": "16",
+    "security_patch": "2026-07-05",
+    "build_fingerprint": "samsung\/a57xnaxx\/a57x:16\/BP4A.251205.006\/A576BXXS4AZG5_OLM4AZG5:user\/release-keys",
+    "abis": [
+      "arm64-v8a"
+    ],
+    "battery_percent": 90,
+    "battery_temperature_celsius": 33.1,
+    "thermal_status": 0,
+    "process_pss_mb": 504.4345703125
+  },
+  "device_end": {
+    "manufacturer": "samsung",
+    "model": "SM-A576B",
+    "android_release": "16",
+    "security_patch": "2026-07-05",
+    "build_fingerprint": "samsung\/a57xnaxx\/a57x:16\/BP4A.251205.006\/A576BXXS4AZG5_OLM4AZG5:user\/release-keys",
+    "abis": [
+      "arm64-v8a"
+    ],
+    "battery_percent": 90,
+    "battery_temperature_celsius": 34.3,
+    "thermal_status": 1,
+    "process_pss_mb": 272.712890625
+  },
+  "limitations": [
+    "The synchronous LiteRT-LM API does not expose TTFT, prefill, decode, or energy metrics here.",
+    "The 20 public synthetic cases are an engineering smoke set, not broad user-query accuracy."
+  ]
+}

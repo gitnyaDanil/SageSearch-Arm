@@ -1,0 +1,5 @@
+configuration,backend,prompt,response_constraint,deterministic_reconciliation,failure_type,error_count,usable_output_count,engine_initialization_ms,strict_json_rate,schema_valid_rate,exact_plan_rate,plan_slot_f1,latency_ms_median,latency_ms_p95,failure_return_latency_ms_median,peak_pss_mb_median,quality_pass
+gpu-baseline-unconstrained,GPU,baseline-v1,False,False,LiteRtLmJniException (20/20),20,0,11180,0.0,0.0,0.0,0.0,,,688.5,2082.50830078125,False
+cpu-baseline-unconstrained,CPU,baseline-v1,False,False,,0,20,4994,0.0,0.0,0.0,0.0,8008.5,12809.699999999999,,2180.431640625,False
+cpu-optimized-unconstrained,CPU,optimized-v1,False,False,,0,20,4953,1.0,1.0,0.05,0.6356589147286822,4617.0,8463.35,,2214.072265625,False
+cpu-optimized-constrained-hybrid,CPU,sagesearch-query-plan-v1-opt2,True,True,,0,20,5042,1.0,1.0,1.0,1.0,8766.0,11820.300000000001,,2230.806640625,True

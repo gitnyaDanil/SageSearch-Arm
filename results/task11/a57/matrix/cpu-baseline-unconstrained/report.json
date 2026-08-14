@@ -1,0 +1,411 @@
+{
+  "case_count": 20,
+  "output_count": 20,
+  "strict_json_rate": 0.0,
+  "recoverable_json_rate": 1.0,
+  "schema_valid_rate": 0.0,
+  "exact_plan_rate": 0.0,
+  "plan_slot_precision": 0.0,
+  "plan_slot_recall": 0.0,
+  "plan_slot_f1": 0.0,
+  "missing_ids": [],
+  "unexpected_ids": [],
+  "performance": {
+    "latency_ms": {
+      "count": 20,
+      "median": 8008.5,
+      "p95": 12809.699999999999,
+      "min": 4893.0,
+      "max": 13108.0
+    },
+    "peak_pss_mb": {
+      "count": 20,
+      "median": 2180.431640625,
+      "p95": 2197.2712890625003,
+      "min": 2160.1767578125,
+      "max": 2199.1416015625
+    }
+  },
+  "details": [
+    {
+      "id": "q001",
+      "strict_json": false,
+      "recoverable_json": true,
+      "status": "schema_error",
+      "schema_valid": false,
+      "exact": false,
+      "errors": [
+        "contentKinds must be an array",
+        "albumHint must be a non-empty string",
+        "mediaDateRange must be a non-empty object"
+      ],
+      "false_positive_tokens": [],
+      "false_negative_tokens": [
+        "amountRangeMinor.min:100000",
+        "contentKinds:receipt",
+        "currencyCode:IDR",
+        "merchant:alfamart",
+        "textTerms:coffee",
+        "transactionDateRange.end:2026-07-31",
+        "transactionDateRange.start:2026-07-01"
+      ]
+    },
+    {
+      "id": "q002",
+      "strict_json": false,
+      "recoverable_json": true,
+      "status": "schema_error",
+      "schema_valid": false,
+      "exact": false,
+      "errors": [
+        "contentKinds must be an array",
+        "albumHint must be a non-empty string",
+        "mediaDateRange must be a non-empty object"
+      ],
+      "false_positive_tokens": [],
+      "false_negative_tokens": [
+        "amountRangeMinor.max:27750",
+        "amountRangeMinor.min:27750",
+        "contentKinds:receipt",
+        "currencyCode:IDR",
+        "merchant:toko maju",
+        "transactionDateRange.end:2026-08-08",
+        "transactionDateRange.start:2026-08-08"
+      ]
+    },
+    {
+      "id": "q003",
+      "strict_json": false,
+      "recoverable_json": true,
+      "status": "schema_error",
+      "schema_valid": false,
+      "exact": false,
+      "errors": [
+        "contentKinds must be an array"
+      ],
+      "false_positive_tokens": [],
+      "false_negative_tokens": [
+        "contentKinds:picture",
+        "textTerms:welcome to bandung"
+      ]
+    },
+    {
+      "id": "q004",
+      "strict_json": false,
+      "recoverable_json": true,
+      "status": "schema_error",
+      "schema_valid": false,
+      "exact": false,
+      "errors": [
+        "contentKinds must be an array"
+      ],
+      "false_positive_tokens": [],
+      "false_negative_tokens": [
+        "amountRangeMinor.max:5000",
+        "amountRangeMinor.min:1000",
+        "contentKinds:receipt",
+        "currencyCode:USD"
+      ]
+    },
+    {
+      "id": "q005",
+      "strict_json": false,
+      "recoverable_json": true,
+      "status": "schema_error",
+      "schema_valid": false,
+      "exact": false,
+      "errors": [
+        "contentKinds must be an array"
+      ],
+      "false_positive_tokens": [],
+      "false_negative_tokens": [
+        "contentKinds:receipt",
+        "textTerms:battery",
+        "transactionDateRange.end:2026-07-31",
+        "transactionDateRange.start:2026-07-01"
+      ]
+    },
+    {
+      "id": "q006",
+      "strict_json": false,
+      "recoverable_json": true,
+      "status": "schema_error",
+      "schema_valid": false,
+      "exact": false,
+      "errors": [
+        "contentKinds must be an array"
+      ],
+      "false_positive_tokens": [],
+      "false_negative_tokens": [
+        "albumHint:camera",
+        "contentKinds:picture",
+        "textTerms:conference badge"
+      ]
+    },
+    {
+      "id": "q007",
+      "strict_json": false,
+      "recoverable_json": true,
+      "status": "schema_error",
+      "schema_valid": false,
+      "exact": false,
+      "errors": [
+        "contentKinds must be an array",
+        "albumHint must be a non-empty string",
+        "transactionDateRange must be a non-empty object",
+        "mediaDateRange must be a non-empty object"
+      ],
+      "false_positive_tokens": [],
+      "false_negative_tokens": [
+        "amountRangeMinor.max:50000",
+        "contentKinds:receipt",
+        "currencyCode:IDR"
+      ]
+    },
+    {
+      "id": "q008",
+      "strict_json": false,
+      "recoverable_json": true,
+      "status": "schema_error",
+      "schema_valid": false,
+      "exact": false,
+      "errors": [
+        "contentKinds must be an array",
+        "merchant must be a non-empty string",
+        "albumHint must be a non-empty string",
+        "transactionDateRange must be a non-empty object",
+        "mediaDateRange must be a non-empty object"
+      ],
+      "false_positive_tokens": [],
+      "false_negative_tokens": [
+        "amountRangeMinor.max:125000",
+        "amountRangeMinor.min:125000",
+        "contentKinds:receipt",
+        "currencyCode:IDR"
+      ]
+    },
+    {
+      "id": "q009",
+      "strict_json": false,
+      "recoverable_json": true,
+      "status": "schema_error",
+      "schema_valid": false,
+      "exact": false,
+      "errors": [
+        "contentKinds must be an array"
+      ],
+      "false_positive_tokens": [],
+      "false_negative_tokens": [
+        "contentKinds:picture",
+        "faceFilter:none"
+      ]
+    },
+    {
+      "id": "q010",
+      "strict_json": false,
+      "recoverable_json": true,
+      "status": "schema_error",
+      "schema_valid": false,
+      "exact": false,
+      "errors": [
+        "contentKinds must be an array"
+      ],
+      "false_positive_tokens": [],
+      "false_negative_tokens": [
+        "contentKinds:picture",
+        "faceFilter:multiple"
+      ]
+    },
+    {
+      "id": "q011",
+      "strict_json": false,
+      "recoverable_json": true,
+      "status": "schema_error",
+      "schema_valid": false,
+      "exact": false,
+      "errors": [
+        "contentKinds must be an array",
+        "merchant must be a non-empty string",
+        "albumHint must be a non-empty string",
+        "currencyCode must be three uppercase letters",
+        "amountRangeMinor must be a non-empty object",
+        "transactionDateRange must be a non-empty object",
+        "mediaDateRange must be a non-empty object"
+      ],
+      "false_positive_tokens": [],
+      "false_negative_tokens": [
+        "contentKinds:picture",
+        "labels:screenshot",
+        "textTerms:0x80070005"
+      ]
+    },
+    {
+      "id": "q012",
+      "strict_json": false,
+      "recoverable_json": true,
+      "status": "schema_error",
+      "schema_valid": false,
+      "exact": false,
+      "errors": [
+        "contentKinds must be an array",
+        "albumHint must be a non-empty string",
+        "transactionDateRange.start must be a string",
+        "transactionDateRange.end must be a string",
+        "mediaDateRange must be a non-empty object"
+      ],
+      "false_positive_tokens": [],
+      "false_negative_tokens": [
+        "contentKinds:receipt",
+        "currencyCode:IDR",
+        "merchant:toko maju"
+      ]
+    },
+    {
+      "id": "q013",
+      "strict_json": false,
+      "recoverable_json": true,
+      "status": "schema_error",
+      "schema_valid": false,
+      "exact": false,
+      "errors": [
+        "contentKinds must be an array"
+      ],
+      "false_positive_tokens": [],
+      "false_negative_tokens": [
+        "contentKinds:picture",
+        "labels:bicycle"
+      ]
+    },
+    {
+      "id": "q014",
+      "strict_json": false,
+      "recoverable_json": true,
+      "status": "schema_error",
+      "schema_valid": false,
+      "exact": false,
+      "errors": [
+        "contentKinds must be an array",
+        "albumHint must be a non-empty string",
+        "mediaDateRange must be a non-empty object"
+      ],
+      "false_positive_tokens": [],
+      "false_negative_tokens": [
+        "amountRangeMinor.min:100000",
+        "contentKinds:receipt",
+        "currencyCode:IDR",
+        "merchant:alfamart",
+        "transactionDateRange.end:2026-07-31",
+        "transactionDateRange.start:2026-07-01"
+      ]
+    },
+    {
+      "id": "q015",
+      "strict_json": false,
+      "recoverable_json": true,
+      "status": "schema_error",
+      "schema_valid": false,
+      "exact": false,
+      "errors": [
+        "contentKinds must be an array"
+      ],
+      "false_positive_tokens": [],
+      "false_negative_tokens": [
+        "albumHint:whatsapp images",
+        "contentKinds:picture"
+      ]
+    },
+    {
+      "id": "q016",
+      "strict_json": false,
+      "recoverable_json": true,
+      "status": "schema_error",
+      "schema_valid": false,
+      "exact": false,
+      "errors": [
+        "contentKinds must be an array",
+        "merchant must be a non-empty string",
+        "albumHint must be a non-empty string",
+        "currencyCode must be three uppercase letters",
+        "amountRangeMinor must be a non-empty object",
+        "transactionDateRange must be a non-empty object",
+        "mediaDateRange must be a non-empty object"
+      ],
+      "false_positive_tokens": [],
+      "false_negative_tokens": [
+        "contentKinds:receipt"
+      ]
+    },
+    {
+      "id": "q017",
+      "strict_json": false,
+      "recoverable_json": true,
+      "status": "schema_error",
+      "schema_valid": false,
+      "exact": false,
+      "errors": [
+        "contentKinds must be an array",
+        "merchant must be a non-empty string",
+        "albumHint must be a non-empty string",
+        "currencyCode must be three uppercase letters",
+        "amountRangeMinor must be a non-empty object",
+        "transactionDateRange must be a non-empty object",
+        "mediaDateRange must be a non-empty object"
+      ],
+      "false_positive_tokens": [],
+      "false_negative_tokens": [
+        "textTerms:coffee"
+      ]
+    },
+    {
+      "id": "q018",
+      "strict_json": false,
+      "recoverable_json": true,
+      "status": "schema_error",
+      "schema_valid": false,
+      "exact": false,
+      "errors": [
+        "contentKinds must be an array"
+      ],
+      "false_positive_tokens": [],
+      "false_negative_tokens": [
+        "contentKinds:receipt",
+        "transactionDateRange.end:2026-08-08",
+        "transactionDateRange.start:2026-08-08"
+      ]
+    },
+    {
+      "id": "q019",
+      "strict_json": false,
+      "recoverable_json": true,
+      "status": "schema_error",
+      "schema_valid": false,
+      "exact": false,
+      "errors": [
+        "contentKinds must be an array"
+      ],
+      "false_positive_tokens": [],
+      "false_negative_tokens": [
+        "contentKinds:picture",
+        "mediaDateRange.end:2026-08-07T23:59:59Z",
+        "mediaDateRange.start:2026-08-01T00:00:00Z"
+      ]
+    },
+    {
+      "id": "q020",
+      "strict_json": false,
+      "recoverable_json": true,
+      "status": "schema_error",
+      "schema_valid": false,
+      "exact": false,
+      "errors": [
+        "contentKinds must be an array"
+      ],
+      "false_positive_tokens": [],
+      "false_negative_tokens": [
+        "contentKinds:picture",
+        "faceFilter:exactly_one",
+        "labels:bicycle"
+      ]
+    }
+  ]
+}

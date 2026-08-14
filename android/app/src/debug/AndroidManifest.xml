@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <application>
+        <activity
+            android:name=".LiteRtSmokeActivity"
+            android:exported="true"
+            android:label="SageSearch Gemma smoke">
+            <intent-filter>
+                <action android:name="com.sagesearch.android.LITERT_SMOKE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LiteRtConversationProbeActivity"
+            android:exported="true"
+            android:label="SageSearch Gemma conversation probe">
+            <intent-filter>
+                <action android:name="com.sagesearch.android.LITERT_CONVERSATION_PROBE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".PlannerBenchmarkActivity"
+            android:exported="true"
+            android:label="SageSearch planner benchmark">
+            <intent-filter>
+                <action android:name="com.sagesearch.android.PLANNER_BENCHMARK" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

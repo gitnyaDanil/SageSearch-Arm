@@ -1,0 +1,24 @@
+You convert a user's image-search request into JSON for SageSearch.
+
+The current date is 2026-08-14.
+
+Return a JSON object with version 1 and any useful fields from this list:
+
+- textTerms: visible words to search for
+- contentKinds: receipt, picture, mixed, or unknown
+- merchant
+- amountRangeMinor with min and/or max
+- currencyCode
+- transactionDateRange with start and/or end in YYYY-MM-DD
+- mediaDateRange with ISO-8601 start and/or end
+- labels: requested objects or scenes
+- faceFilter: none, any, exactly_one, or multiple
+- albumHint
+
+IDR amounts are stored as whole rupiah. USD amounts are stored as cents.
+Do not invent a filter that the user did not request.
+
+User request:
+{{QUERY}}
+
+JSON:

@@ -1,0 +1,11 @@
+SageSearch Android
+Copyright 2026 Daniel Polii
+
+The Apache License 2.0 applies to the original SageSearch Android source and
+documentation contained in this repository.
+
+The project uses third-party dependencies and an externally obtained Gemma
+model. Those components remain governed by their respective upstream licenses
+and terms. The Gemma model file is not included or redistributed here.
+
+See THIRD_PARTY_NOTICES.md for additional information.

@@ -1,0 +1,211 @@
+{
+  "case_count": 20,
+  "output_count": 20,
+  "strict_json_rate": 0.0,
+  "recoverable_json_rate": 0.0,
+  "schema_valid_rate": 0.0,
+  "exact_plan_rate": 0.0,
+  "plan_slot_precision": 0.0,
+  "plan_slot_recall": 0.0,
+  "plan_slot_f1": 0.0,
+  "missing_ids": [],
+  "unexpected_ids": [],
+  "performance": {
+    "latency_ms": {
+      "count": 20,
+      "median": 688.5,
+      "p95": 879.5500000000013,
+      "min": 682.0,
+      "max": 2581.0
+    },
+    "peak_pss_mb": {
+      "count": 20,
+      "median": 2082.50830078125,
+      "p95": 2086.6399414062503,
+      "min": 2065.080078125,
+      "max": 2087.5361328125
+    }
+  },
+  "details": [
+    {
+      "id": "q001",
+      "strict_json": false,
+      "recoverable_json": false,
+      "status": "parse_error",
+      "errors": [
+        "output must be a JSON object or string"
+      ]
+    },
+    {
+      "id": "q002",
+      "strict_json": false,
+      "recoverable_json": false,
+      "status": "parse_error",
+      "errors": [
+        "output must be a JSON object or string"
+      ]
+    },
+    {
+      "id": "q003",
+      "strict_json": false,
+      "recoverable_json": false,
+      "status": "parse_error",
+      "errors": [
+        "output must be a JSON object or string"
+      ]
+    },
+    {
+      "id": "q004",
+      "strict_json": false,
+      "recoverable_json": false,
+      "status": "parse_error",
+      "errors": [
+        "output must be a JSON object or string"
+      ]
+    },
+    {
+      "id": "q005",
+      "strict_json": false,
+      "recoverable_json": false,
+      "status": "parse_error",
+      "errors": [
+        "output must be a JSON object or string"
+      ]
+    },
+    {
+      "id": "q006",
+      "strict_json": false,
+      "recoverable_json": false,
+      "status": "parse_error",
+      "errors": [
+        "output must be a JSON object or string"
+      ]
+    },
+    {
+      "id": "q007",
+      "strict_json": false,
+      "recoverable_json": false,
+      "status": "parse_error",
+      "errors": [
+        "output must be a JSON object or string"
+      ]
+    },
+    {
+      "id": "q008",
+      "strict_json": false,
+      "recoverable_json": false,
+      "status": "parse_error",
+      "errors": [
+        "output must be a JSON object or string"
+      ]
+    },
+    {
+      "id": "q009",
+      "strict_json": false,
+      "recoverable_json": false,
+      "status": "parse_error",
+      "errors": [
+        "output must be a JSON object or string"
+      ]
+    },
+    {
+      "id": "q010",
+      "strict_json": false,
+      "recoverable_json": false,
+      "status": "parse_error",
+      "errors": [
+        "output must be a JSON object or string"
+      ]
+    },
+    {
+      "id": "q011",
+      "strict_json": false,
+      "recoverable_json": false,
+      "status": "parse_error",
+      "errors": [
+        "output must be a JSON object or string"
+      ]
+    },
+    {
+      "id": "q012",
+      "strict_json": false,
+      "recoverable_json": false,
+      "status": "parse_error",
+      "errors": [
+        "output must be a JSON object or string"
+      ]
+    },
+    {
+      "id": "q013",
+      "strict_json": false,
+      "recoverable_json": false,
+      "status": "parse_error",
+      "errors": [
+        "output must be a JSON object or string"
+      ]
+    },
+    {
+      "id": "q014",
+      "strict_json": false,
+      "recoverable_json": false,
+      "status": "parse_error",
+      "errors": [
+        "output must be a JSON object or string"
+      ]
+    },
+    {
+      "id": "q015",
+      "strict_json": false,
+      "recoverable_json": false,
+      "status": "parse_error",
+      "errors": [
+        "output must be a JSON object or string"
+      ]
+    },
+    {
+      "id": "q016",
+      "strict_json": false,
+      "recoverable_json": false,
+      "status": "parse_error",
+      "errors": [
+        "output must be a JSON object or string"
+      ]
+    },
+    {
+      "id": "q017",
+      "strict_json": false,
+      "recoverable_json": false,
+      "status": "parse_error",
+      "errors": [
+        "output must be a JSON object or string"
+      ]
+    },
+    {
+      "id": "q018",
+      "strict_json": false,
+      "recoverable_json": false,
+      "status": "parse_error",
+      "errors": [
+        "output must be a JSON object or string"
+      ]
+    },
+    {
+      "id": "q019",
+      "strict_json": false,
+      "recoverable_json": false,
+      "status": "parse_error",
+      "errors": [
+        "output must be a JSON object or string"
+      ]
+    },
+    {
+      "id": "q020",
+      "strict_json": false,
+      "recoverable_json": false,
+      "status": "parse_error",
+      "errors": [
+        "output must be a JSON object or string"
+      ]
+    }
+  ]
+}

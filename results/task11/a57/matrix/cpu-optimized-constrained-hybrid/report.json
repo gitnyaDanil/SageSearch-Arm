@@ -1,0 +1,251 @@
+{
+  "case_count": 20,
+  "output_count": 20,
+  "strict_json_rate": 1.0,
+  "recoverable_json_rate": 1.0,
+  "schema_valid_rate": 1.0,
+  "exact_plan_rate": 1.0,
+  "plan_slot_precision": 1.0,
+  "plan_slot_recall": 1.0,
+  "plan_slot_f1": 1.0,
+  "missing_ids": [],
+  "unexpected_ids": [],
+  "performance": {
+    "latency_ms": {
+      "count": 20,
+      "median": 8766.0,
+      "p95": 11820.300000000001,
+      "min": 7854.0,
+      "max": 12700.0
+    },
+    "peak_pss_mb": {
+      "count": 20,
+      "median": 2230.806640625,
+      "p95": 2270.5953125,
+      "min": 2199.3193359375,
+      "max": 2275.189453125
+    }
+  },
+  "details": [
+    {
+      "id": "q001",
+      "strict_json": true,
+      "recoverable_json": true,
+      "status": "ok",
+      "schema_valid": true,
+      "exact": true,
+      "errors": [],
+      "false_positive_tokens": [],
+      "false_negative_tokens": []
+    },
+    {
+      "id": "q002",
+      "strict_json": true,
+      "recoverable_json": true,
+      "status": "ok",
+      "schema_valid": true,
+      "exact": true,
+      "errors": [],
+      "false_positive_tokens": [],
+      "false_negative_tokens": []
+    },
+    {
+      "id": "q003",
+      "strict_json": true,
+      "recoverable_json": true,
+      "status": "ok",
+      "schema_valid": true,
+      "exact": true,
+      "errors": [],
+      "false_positive_tokens": [],
+      "false_negative_tokens": []
+    },
+    {
+      "id": "q004",
+      "strict_json": true,
+      "recoverable_json": true,
+      "status": "ok",
+      "schema_valid": true,
+      "exact": true,
+      "errors": [],
+      "false_positive_tokens": [],
+      "false_negative_tokens": []
+    },
+    {
+      "id": "q005",
+      "strict_json": true,
+      "recoverable_json": true,
+      "status": "ok",
+      "schema_valid": true,
+      "exact": true,
+      "errors": [],
+      "false_positive_tokens": [],
+      "false_negative_tokens": []
+    },
+    {
+      "id": "q006",
+      "strict_json": true,
+      "recoverable_json": true,
+      "status": "ok",
+      "schema_valid": true,
+      "exact": true,
+      "errors": [],
+      "false_positive_tokens": [],
+      "false_negative_tokens": []
+    },
+    {
+      "id": "q007",
+      "strict_json": true,
+      "recoverable_json": true,
+      "status": "ok",
+      "schema_valid": true,
+      "exact": true,
+      "errors": [],
+      "false_positive_tokens": [],
+      "false_negative_tokens": []
+    },
+    {
+      "id": "q008",
+      "strict_json": true,
+      "recoverable_json": true,
+      "status": "ok",
+      "schema_valid": true,
+      "exact": true,
+      "errors": [],
+      "false_positive_tokens": [],
+      "false_negative_tokens": []
+    },
+    {
+      "id": "q009",
+      "strict_json": true,
+      "recoverable_json": true,
+      "status": "ok",
+      "schema_valid": true,
+      "exact": true,
+      "errors": [],
+      "false_positive_tokens": [],
+      "false_negative_tokens": []
+    },
+    {
+      "id": "q010",
+      "strict_json": true,
+      "recoverable_json": true,
+      "status": "ok",
+      "schema_valid": true,
+      "exact": true,
+      "errors": [],
+      "false_positive_tokens": [],
+      "false_negative_tokens": []
+    },
+    {
+      "id": "q011",
+      "strict_json": true,
+      "recoverable_json": true,
+      "status": "ok",
+      "schema_valid": true,
+      "exact": true,
+      "errors": [],
+      "false_positive_tokens": [],
+      "false_negative_tokens": []
+    },
+    {
+      "id": "q012",
+      "strict_json": true,
+      "recoverable_json": true,
+      "status": "ok",
+      "schema_valid": true,
+      "exact": true,
+      "errors": [],
+      "false_positive_tokens": [],
+      "false_negative_tokens": []
+    },
+    {
+      "id": "q013",
+      "strict_json": true,
+      "recoverable_json": true,
+      "status": "ok",
+      "schema_valid": true,
+      "exact": true,
+      "errors": [],
+      "false_positive_tokens": [],
+      "false_negative_tokens": []
+    },
+    {
+      "id": "q014",
+      "strict_json": true,
+      "recoverable_json": true,
+      "status": "ok",
+      "schema_valid": true,
+      "exact": true,
+      "errors": [],
+      "false_positive_tokens": [],
+      "false_negative_tokens": []
+    },
+    {
+      "id": "q015",
+      "strict_json": true,
+      "recoverable_json": true,
+      "status": "ok",
+      "schema_valid": true,
+      "exact": true,
+      "errors": [],
+      "false_positive_tokens": [],
+      "false_negative_tokens": []
+    },
+    {
+      "id": "q016",
+      "strict_json": true,
+      "recoverable_json": true,
+      "status": "ok",
+      "schema_valid": true,
+      "exact": true,
+      "errors": [],
+      "false_positive_tokens": [],
+      "false_negative_tokens": []
+    },
+    {
+      "id": "q017",
+      "strict_json": true,
+      "recoverable_json": true,
+      "status": "ok",
+      "schema_valid": true,
+      "exact": true,
+      "errors": [],
+      "false_positive_tokens": [],
+      "false_negative_tokens": []
+    },
+    {
+      "id": "q018",
+      "strict_json": true,
+      "recoverable_json": true,
+      "status": "ok",
+      "schema_valid": true,
+      "exact": true,
+      "errors": [],
+      "false_positive_tokens": [],
+      "false_negative_tokens": []
+    },
+    {
+      "id": "q019",
+      "strict_json": true,
+      "recoverable_json": true,
+      "status": "ok",
+      "schema_valid": true,
+      "exact": true,
+      "errors": [],
+      "false_positive_tokens": [],
+      "false_negative_tokens": []
+    },
+    {
+      "id": "q020",
+      "strict_json": true,
+      "recoverable_json": true,
+      "status": "ok",
+      "schema_valid": true,
+      "exact": true,
+      "errors": [],
+      "false_positive_tokens": [],
+      "false_negative_tokens": []
+    }
+  ]
+}

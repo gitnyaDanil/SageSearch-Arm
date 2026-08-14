@@ -1,0 +1,100 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sagesearch.local/schemas/search-plan-v1.json",
+  "title": "SageSearch SearchPlan v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["version"],
+  "properties": {
+    "version": {
+      "const": 1
+    },
+    "textTerms": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "uniqueItems": true,
+      "maxItems": 12
+    },
+    "contentKinds": {
+      "type": "array",
+      "items": {
+        "enum": ["receipt", "picture", "mixed", "unknown"]
+      },
+      "uniqueItems": true,
+      "maxItems": 4
+    },
+    "merchant": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 120
+    },
+    "amountRangeMinor": {
+      "$ref": "#/$defs/integerRange"
+    },
+    "currencyCode": {
+      "type": "string",
+      "pattern": "^[A-Z]{3}$"
+    },
+    "transactionDateRange": {
+      "$ref": "#/$defs/dateRange"
+    },
+    "mediaDateRange": {
+      "$ref": "#/$defs/instantRange"
+    },
+    "labels": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "uniqueItems": true,
+      "maxItems": 12
+    },
+    "faceFilter": {
+      "enum": ["none", "any", "exactly_one", "multiple"]
+    },
+    "albumHint": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 160
+    }
+  },
+  "$defs": {
+    "integerRange": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "min": { "type": "integer" },
+        "max": { "type": "integer" }
+      },
+      "minProperties": 1
+    },
+    "dateRange": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "start": {
+          "type": "string",
+          "format": "date"
+        },
+        "end": {
+          "type": "string",
+          "format": "date"
+        }
+      },
+      "minProperties": 1
+    },
+    "instantRange": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "start": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "end": {
+          "type": "string",
+          "format": "date-time"
+        }
+      },
+      "minProperties": 1
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "evidence_kind": "SageSearch Task 11 on-device A/B demo rehearsal",
+  "captured_at_local": "2026-08-14T20:40:00+07:00",
+  "device": {
+    "manufacturer": "samsung",
+    "model": "SM-A576B",
+    "android_release": "16",
+    "abi": "arm64-v8a"
+  },
+  "query": "gym membership around March",
+  "indexed_fixture_count": 1,
+  "comparison": [
+    {
+      "application": "Samsung My Files",
+      "package": "com.sec.android.app.myfiles",
+      "version": "15.4.09.5",
+      "outcome": "No results found",
+      "matched_file": null,
+      "screenshot": "artifacts/task11-myfiles-search.png",
+      "screenshot_sha256": "2695dfc0777338b763814664b26fe81871c5fa09b7281c2c8cb7803bdab43166"
+    },
+    {
+      "application": "SageSearch",
+      "package": "com.sagesearch.android",
+      "version": "0.1.0-debug",
+      "outcome": "Matched result",
+      "matched_file": "IMG_20260312_184522.png",
+      "visible_evidence": [
+        "Text: MEMBERSHIP RECEIPT",
+        "Currency: IDR"
+      ],
+      "planner_status": "Refined on device",
+      "open_file_verified": true,
+      "result_screenshot": "artifacts/task11-sagesearch-result.png",
+      "result_screenshot_sha256": "2db2ba8d8869debc847705bc36c8eb97ebbc7aa45334c3204425809f497e8226",
+      "opened_file_screenshot": "artifacts/task11-opened-receipt.png",
+      "opened_file_screenshot_sha256": "01d37f229fe0030ead6d207f882234f6ab796234386be5d4f68222be493649a2"
+    }
+  ],
+  "fixture_truth": {
+    "document_type": "membership receipt",
+    "merchant": "FITNESS CENTER",
+    "date_visible_in_original": "12 Maret 2026",
+    "amount_visible_in_original": "Rp 200.000"
+  },
+  "limitations": [
+    "This is a controlled comparison on one Samsung A57 and one synthetic receipt, not a universal claim about Android file managers.",
+    "The fixture was intentionally named like a camera image so its semantic meaning is absent from the filename.",
+    "The test demonstrates the complete local query-planning, indexed retrieval, evidence, and open-file journey; it does not measure broad-corpus accuracy."
+  ]
+}
