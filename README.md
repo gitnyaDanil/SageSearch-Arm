@@ -1,4 +1,4 @@
-# SageSearch — AI File Finder
+# SageSearch on Arm
 
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
 
