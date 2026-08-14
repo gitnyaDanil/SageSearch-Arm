@@ -2,7 +2,7 @@
 
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
 
-![SageSearch on Arm — private, intent-aware search on Android](artifacts/demo/sagesearch-devpost-thumbnail.png)
+![SageSearch — search by what you remember; private, on-device, intent-aware](artifacts/demo/sagesearch-devpost-thumbnail.png)
 
 > Find local files using plain language. Your file index and results stay on your device.
 
