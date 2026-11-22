@@ -6,6 +6,14 @@
 
 > Find local files using plain language. Your file index and results stay on your device.
 
+## Project history and submissions
+
+- [Original SageSearch web app — OpenAI Build Week project gallery](https://devpost.com/software/sagesearch) (July 2026)
+- [Current Android continuation — Arm Create: AI Optimization Challenge](https://devpost.com/software/sagesearch-crhjm7) (August 2026)
+
+SageSearch began as a local-first web application and later expanded into the
+offline Android application documented in this repository.
+
 ---
 
 ## Arm Create hackathon build: Android offline search
